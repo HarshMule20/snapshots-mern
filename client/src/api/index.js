@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const url = axios.create({ baseURL: 'http://localhost:5000'});
-const url = axios.create({ baseURL: 'https://snapshot20.herokuapp.com'});
+const url = axios.create({ baseURL: 'http://localhost:5000'});
+// const url = axios.create({ baseURL: 'https://snapshot20.herokuapp.com'});
 
 
 export const fetchPosts = () => url.get("/posts");
