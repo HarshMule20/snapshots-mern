@@ -9,7 +9,7 @@ import Icon from './icon';
 import { useHistory } from 'react-router-dom';
 
 const Auth = () => {
-    console.log("conete", process.env.GOOGLE_CLIENT_ID)
+    console.log("conete", process.env.REACT_APP_GOOGLE_CLIENT_ID)
     // const state = null; 
     const classes = useStyles();
     const [showPassword, setShowPassword] = useState(false);
@@ -70,7 +70,7 @@ const Auth = () => {
                         { isSignup ? 'Sign Up' : 'Sign In' }
                     </Button>
                     <GoogleLogin 
-                        clientId={process.env.GOOGLE_CLIENT_ID}
+                        clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
                         render={(renderProps) => (
                             <Button 
                                 className={classes.googleButton} 
